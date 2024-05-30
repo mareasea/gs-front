@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.back {
+    position: relative;
+    width: 100%;
+    height: 681px;
+    overflow: hidden;
+}
+.back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #142A38;
+    z-index: -2;
+}
+.back::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: -1;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    z-index: 2;
+}
+#logo {
+    width: 251px;
+    height: 100px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #1f3a4a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 45px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: large;
+    display: block;
+    transition: 0.3s;
+}
+
+#x {
+    width: 15px;
+    height: 15px;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 20px;
+    font-size: 36px;
+    margin-left: 80px;
+    border-style: none;
+    background-color: transparent;
+}
+#m {
+    width: 35px;
+    height: 35px;
+}
+.openbtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 20px;
+    font-size: 36px;
+    margin-left: 80px;
+    border-style: none;
+    background-color: transparent;
+}
+.content {
+    transition: margin-right 0.5s;
+    padding: 20px;
+}
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inicio>p {
+    padding: 210px;
+    width: 460px;
+    height: 145px;
+    text-align: center;
+    margin-left: 50px;
+    color: white;
+    font-family: "Cutive Mono", monospace;
+    font-size: x-large;
+}
+#problema {
+    width: 100%;
+    height: 681px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #142A38;
+}
+
+#problema > p {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15vw;
+    color: rgba(255, 255, 255, 0.34);
+    margin: 0;
+    top: 150%;
+    left: 0;
+    transform: translate(0, -150%);
+    z-index: 1;
+}
+
+#problema > img {
+    position: relative;
+    top: 25%;
+    left: 0;
+    transform: translate(0, -25%);
+    margin-bottom: 20px;
+    z-index: 2;
+}
+#circle1, #circle2, #circle3, #circle4 {
+    position: absolute; 
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#circle1 {
+    top: 40%;
+    margin-top: 420px;
+    left: 40%;
+}
+
+#circle2 {
+    top: 50%;
+    margin: 390px;
+    left: 30%;
+}
+
+#circle3 {
+    top: 60%;
+    margin-top: 200px;
+    left: 50%;
+}
+
+#circle4 {
+    top: 70%;
+    margin-top: 260px;
+    left: 35%;
+}
+
+#c {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#circle-modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #313d4b;
+    width: 350px;
+    height: 350px;
+    font-family: monospace;
+    font-size: large;
+    color: #F8F8F2;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#tecnologia {
+    width: 100%;
+    height: 681px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #142A38;
+}
+.card {
+    width: 972px;
+    height: 425px;
+    cursor: pointer;
+}
+.ex {
+    float: left;
+    width: 572px;
+    height: 425px;
+    background-color: white;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: #142A38;
+    padding: 0;
+    margin: 0;
+}
+.ex>h1 {
+    padding: 10px;
+}
+.prototipo {
+    float: left;
+    width: 400px;
+    height: 425px;
+}
+.prototipo>img {
+    width: 400px;
+    height: 425px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 335px;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #313d4b;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    font-family: monospace;
+    font-size: large;
+    color: #F8F8F2;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.modal-content .closebtn{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 20px;
+    font-size: 36px;
+    margin-left: 80px;
+    border-style: none;
+    background-color: transparent;
+}
+#objetivos {
+    width: 100%;
+    height: 681px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #142A38;
+}
+#target{
+    margin-top: 50px;
+    width: 486px;
+    height: 530px;
+    background-color: white;
+}
+#img{
+    width: 486px;
+    height: 420px;
+}
+#imagensBanner{
+    width: 486px;
+    height: 420px;
+}
+#obj{
+    display: flex;
+    margin-top: 80px;
+    justify-content: flex-end;
+    font-family: "Josefin Sans", sans-serif;
+    color: #142A38;
+}
+#publico {
+    width: 100%;
+    height: 681px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #142A38;
+}
+#public {
+    width: 600px;
+    height: 490px;
+    border: solid 2px white;
+}
+#conclusion {
+    width: 100%;
+    height: 681px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #142A38;
+}
+
+.carrosel {
+    height: 490px;
+    width: 700px;
+    border: solid 2px #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrosel-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carrosel-content.active {
+    display: flex;
+}
+
+.content1, .content2 {
+    width: 400px;
+    height: 490px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    background-color: white;
+    color: #142A38;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.content2 {
+    background-color: #142A38;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.imagem, .imagem2 {
+    width: 300px;
+    height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.imagem img, .imagem2 img {
+    width: 100%;
+    height: auto;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 400px;
+}
+.rodape{
+    width: 95%;
+    height: 350px;
+    border-radius: 30px;
+    border: solid 2px #27475b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.rodape>h1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50px;
+    color: #27475b;
+    margin-top: 15px;
+    font-family: "Josefin Sans", sans-serif;
+}
+#info{
+    margin-top: 35px;
+    width: 255px;
+    height: 100px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+#info>a{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: #27475b;
+}
+#pareceiros{
+    margin-top: 35px;
+    width: 255px;
+}
+#oc20{
+    height: 100px;
+    width: 150px;
+    top: 145%;
+    left: -199%;
+    transform: translate(199%, -145%);
+    margin-left: 85px;
+   
+}
+#fiap{
+    height: 50px;
+    width: 180px;
+    top: 260%;
+    left: -190%;
+    transform: translate(190%, -260%);
+}
