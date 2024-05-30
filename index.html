@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back" id="marea">
+        <header>
+            <img src="img/logo.png" id="logo" alt="">
+            <div class="content">
+                <button class="openbtn" onclick="openNav()">
+                    <img id="m" src="img/side.png" alt="menu">
+                </button>
+            </div>
+
+            <div class="sidebar">
+                <button class="closebtn" onclick="closeNav()"><img id="x" src="img/x.png" alt=""></button>
+                <ul>
+                    <li><a href="#marea">MAREA</a></li>
+                    <li><a href="#problema">PROBLEMA</a></li>
+                    <li><a href="#tecnologia">TECNOLOGIA</a></li>
+                    <li><a href="#objetivos">OBJETIVOS</a></li>
+                    <li><a href="#publico">PÚBLICO</a></li>
+                    <li><a href="#conclusion">BENEFÍCIOS E IMPACTOS</a></li>
+                    <li><a href="#info">INFORMAÇÕES</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="inicio">
+            <p>“Tenho esperança de que um maior conhecimento do mar, que há milênios dá sabedoria ao homem, inspire mais uma vez os pensamentos e as ações daqueles que preservarão o equilíbrio da natureza e permitirão a conservação da própria vida.”<br>
+            -Jacques Cousteau, oceanógrafo</p>
+        </div>
+    </div>
+    
+    <div id="problema">
+        <div id="c">
+            <div id="circle1" onclick="openC('c1')">
+                <img src="img/circle.png" alt="indicador">
+            </div>
+            <div id="circle2" onclick="openC('c2')">
+                <img src="img/circle.png" alt="indicador">
+            </div>
+            <div id="circle3" onclick="openC('c3')">
+                <img src="img/circle.png" alt="indicador">
+            </div>
+            <div id="circle4" onclick="openC('c4')">
+                <img src="img/circle.png" alt="indicador">
+            </div>
+        </div>
+        <img id="coral" src="img/coral.png" alt="coral">
+        <p>PROBLEMA</p>
+    </div>
+
+    <div id="circle-modal" class="c">
+        <p id="circle-content"></p>
+    </div>
+
+    <div id="tecnologia">
+        <div class="card" onclick="openModal()">
+            <div class="ex">
+                <h1>TECNOLOGIA</h1>
+            </div>
+            <div class="prototipo">
+                <img src="img/teste.jpg" alt="teste">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="closebtn" onclick="closeModal()"><img id="x" src="img/x.png" alt=""></button>
+            <p>Conteúdo do modal</p>
+        </div>
+    </div>
+
+    <div id="objetivos">
+        <div id="target">
+            <div id="img">
+                <img id="imagensBanner">
+            </div>
+            <div id="obj">
+                <h1>NOSSOS OBJETIVOS</h1>
+            </div>
+        </div>
+    </div>
+    <div id="publico">
+        <div id="public">
+            <img src="img/teste.png" alt="">
+        </div>
+    </div>
+
+    <div id="conclusion">
+        <div class="carrosel">
+            <div class="carrosel-content active" id="beneficios">
+                <div class="content1">
+                    <h1>BENEFÍCIOS</h1>
+                    <p>conteúdo da página</p>
+                </div>
+                <div class="imagem" onclick="toggleContent()">
+                    <img src="img/impactos.png" alt="">
+                </div>
+            </div>
+            <div class="carrosel-content" id="impacto" style="display: none;">
+                <div class="imagem2" onclick="toggleContent()">
+                    <img src="img/beneficios.png" alt="">
+                </div>
+                <div class="content2">
+                    <h1>IMPACTO</h1>
+                    <p>conteúdo da página</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <h1> “CONECTADOS PARA UM FUTURO AZUL”</h1>
+            <div id="info">
+                <a href="https://www.linkedin.com/in/ana-laura-torres-loureiro-b85ba1298?trk=contact-info" target="_blank"><img src="img/in.png" alt="">Ana Torres Loureiro</a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-soave-b11a162a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="img/in.png" alt="">João Victor Soave</a>
+                <a href="https://www.linkedin.com/in/vitor-augusto-4bb6a72b7/" target="_blank"><img src="img/in.png" alt="">Vitor França de Oliveira </a>
+            </div>
+            <div id="parceiros">
+                <a href="https://www.fiap.com.br/" target="_blank"><img id="fiap" src="img/fiap.png" alt=""></a>
+                <br>
+                <a href="https://www.oceans20brasil.org/" target="_blank"><img id="oc20" src="img/ocean20.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
