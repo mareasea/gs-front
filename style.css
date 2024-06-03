@@ -596,6 +596,7 @@ footer{
         height: 240px;
         background-color: white;
         text-align: center;
+        font-size: small;
         font-family: "Josefin Sans", sans-serif;
         color: #142A38;
         padding: 0;
@@ -606,11 +607,11 @@ footer{
     }
     .prototipo {
         float: left;
-        width: 140px;
+        width: 145px;
         height: 240px;
     }
     .prototipo>img {
-        width: 140px;
+        width: 145px;
         height: 240px;
     }
     .modal {
@@ -718,7 +719,13 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    
+    .content2 {
+        background-color: #142A38;
+        color: white;
+        font-size: small;
+        font-family: "Josefin Sans", sans-serif;
+        text-align: center;
+    }
     
     .imagem, .imagem2 {
         width: 300px;
