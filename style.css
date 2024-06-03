@@ -461,6 +461,13 @@ footer{
 }
 
 @media screen and (max-width: 600px){
+    header {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        z-index: 2;
+    }
     #logo{
         width: 130px;
         height: 70px;
@@ -468,7 +475,7 @@ footer{
     .openbtn {
         position: absolute;
         top: 0;
-        right: 50px;
+        right: 30px;
         margin: 20px;
         font-size: 36px;
         margin-left: 80px;
@@ -587,7 +594,7 @@ footer{
         height: 240px;
     }
     .prototipo>img {
-        width: 200px;
+        width: 100px;
         height: 240px;
     }
     .modal {
