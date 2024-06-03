@@ -474,7 +474,7 @@ footer{
     .openbtn {
         position: absolute;
         top: 0;
-        right: 30px;
+        right: 10px;
         margin: 20px;
         font-size: 36px;
         margin-left: 80px;
@@ -589,11 +589,11 @@ footer{
     }
     .prototipo {
         float: left;
-        width: 100px;
+        width: 200px;
         height: 240px;
     }
     .prototipo>img {
-        width: 100px;
+        width: 200px;
         height: 240px;
     }
     .modal {
