@@ -589,11 +589,11 @@ footer{
     }
     .prototipo {
         float: left;
-        width: 110px;
+        width: 120px;
         height: 240px;
     }
     .prototipo>img {
-        width: 110px;
+        width: 120px;
         height: 240px;
     }
     .modal {
