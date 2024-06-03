@@ -498,7 +498,25 @@ footer{
         border-style: none;
         background-color: transparent;
     }
-
+    .sidebar a {
+        padding: 55px 8px 20px 32px;
+        text-decoration: none;
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: small;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        margin: 5px;
+        font-size: 40px;
+        margin-left: 80px;
+        border-style: none;
+        background-color: transparent;
+    }
     .inicio {
         padding: 35px; 
     }
@@ -618,7 +636,7 @@ footer{
         height: 240px;
     }
     .prototipo>img {
-        width: 155px;
+        width: 152px;
         height: 240px;
     }
     .modal {
