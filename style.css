@@ -58,16 +58,15 @@ header {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 20px;
-    z-index: 4; /* Ensure the sidebar is on top */
+    z-index: 4; 
 }
 
 .sidebar a {
-    padding: 45px 8px 20px 32px;
+    padding: 50px 8px 20px 32px;
     text-decoration: none;
-    font-size: 25px;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-size: large;
+    font-size: small;
     display: block;
     transition: 0.3s;
 }

@@ -1,8 +1,8 @@
 
 
 function openNav() {
-     document.querySelector(".sidebar").style.width = "250px";
-    document.querySelector(".content").style.marginRight = "250px";
+     document.querySelector(".sidebar").style.width = "150px";
+    document.querySelector(".content").style.marginRight = "150px";
  }
 
 function closeNav() {
