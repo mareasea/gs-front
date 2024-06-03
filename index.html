@@ -56,6 +56,7 @@
     </div>
 
     <div id="circle-modal" class="c">
+        <button class="closebtn" onclick="closeC()"><img id="x" src="img/x.png" alt=""></button>
         <p id="circle-content"></p>
     </div>
 
@@ -63,6 +64,9 @@
         <div class="card" onclick="openModal()">
             <div class="ex">
                 <h1>TECNOLOGIA</h1>
+                <br>
+                <br>
+                <p>Tecnologia de monitoramento constante, com sensores de temperatura, pH e raios UV, tudo isso conectado a um único sistema, coletando dados, montando gráficos e emitindo alertas caso necessário pois com a analise constante da saúde dos Recifes é possível responder rapidamente aos primeiros sinais de branqueamento ou de qualquer tipo de evento prejudicial, evitando a morte deles e de um vasto ecossistema.</p>
             </div>
             <div class="prototipo">
                 <img src="img/teste.jpg" alt="teste">
@@ -72,8 +76,40 @@
 
     <div id="modal" class="modal">
         <div class="modal-content">
+            <h3>Código Fonte</h3>
             <button class="closebtn" onclick="closeModal()"><img id="x" src="img/x.png" alt=""></button>
-            <p>Conteúdo do modal</p>
+            <pre><code>
+         void setup() {
+        // Configura o pino como saída
+        pinMode(ledPin, OUTPUT);
+        }
+                  
+        void loop() {
+        // Liga o LED
+        digitalWrite(ledPin, HIGH);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        // Desliga o LED
+        digitalWrite(ledPin, LOW);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        }
+         void setup() {
+        // Configura o pino como saída
+        pinMode(ledPin, OUTPUT);
+        }
+                  
+        void loop() {
+        // Liga o LED
+        digitalWrite(ledPin, HIGH);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        // Desliga o LED
+        digitalWrite(ledPin, LOW);
+        // Espera por 1000 milissegundos (1 segundo)
+        delay(1000);
+        }
+            </code></pre>
         </div>
     </div>
 
@@ -89,7 +125,7 @@
     </div>
     <div id="publico">
         <div id="public">
-            <img src="img/teste.png" alt="">
+            <img src="img/public.png" alt="Nosso público-alvo são profissionais e colaboradores envolvidos em atividades relacionadas a áreas com recifes de corais, como a APA Costa dos Corais. Isso inclui cientistas, pesquisadores, gestores ambientais, profissionais do setor turístico e pescadores, entre outros atores que desempenham um papel importante na conservação e no uso sustentável desses ecossistemas marinhos. Nosso objetivo é fornecer informações relevantes, recursos e soluções para apoiar suas atividades e promover práticas que contribuam para a preservação dos recifes de corais e a sustentabilidade das comunidades que dependem deles.">
         </div>
     </div>
 
@@ -97,8 +133,9 @@
         <div class="carrosel">
             <div class="carrosel-content active" id="beneficios">
                 <div class="content1">
-                    <h1>BENEFÍCIOS</h1>
-                    <p>conteúdo da página</p>
+                    <h1>BENEFÍCIO</h1>
+                    <br>
+                    <p>Os alertas automáticos identificarão estresse nos corais, permitindo uma resposta rápida e eficaz para aplacar os danos e proteger o ecossistema marinho</p>
                 </div>
                 <div class="imagem" onclick="toggleContent()">
                     <img src="img/impactos.png" alt="">
@@ -109,8 +146,20 @@
                     <img src="img/beneficios.png" alt="">
                 </div>
                 <div class="content2">
-                    <h1>IMPACTO</h1>
-                    <p>conteúdo da página</p>
+                    <h1>IMPACTOS</h1>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Evitar danos irreversíveis aos corais</li>
+                        <br>
+                        <li>Proteger a biodiversidade marinha</li>
+                        <br>
+                        <li>Garantir a sustentabilidade dos recursos pesqueiros legais, contribuindo para a segurança alimentar.</li>
+                        <br>
+                        <li>Contribuir para avanços na pesquisa marinha e na conservação dos oceanos</li>
+                        <br>
+                        <li>Ajudar a evitar custos significativos associados à restauração e recuperação dos recifes danificado</li>
+                    </ul>
                 </div>
             </div>
         </div>
